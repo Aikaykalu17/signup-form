@@ -3,6 +3,7 @@ const btnHover = document.querySelector('.btn__input-field');
 const inputField = document.querySelectorAll('input');
 const btnGreen = document.querySelector('.btn__input-field');
 const label = document.querySelectorAll('.hidden');
+const svgIcon = document.querySelectorAll('.icon__error');
 
 // Handle Hover
 btnHover.addEventListener('mouseover', () => {
@@ -16,24 +17,36 @@ btnHover.addEventListener('mouseout', () => {
 const checkInputField = function (e) {
   inputField.forEach((field, index) => {
     let labels = label[index];
+    let icon = svgIcon[index];
     let isEmailField = field.type === 'email';
+
     if (field.value.trim() === '') {
       e.preventDefault();
       field.style.border = '2px solid red';
       labels.style.display = 'block';
       field.classList.add('red_placeholder');
+      icon.style.display = 'block';
+      if (isEmailField) {
+        field.placeholder = 'email@example/com';
+      }
     } else if (isEmailField && !validateEmail(field.value)) {
       field.style.border = '2px solid red';
       labels.style.display = 'block';
       labels.textContent = 'This is not a valid e-mail!';
       field.classList.add('red_placeholder');
+      icon.style.display = 'block';
     } else {
       field.style.border = '';
       labels.style.display = '';
       field.classList.remove('red_placeholder');
+      icon.style.display = '';
+      if (isEmailField) {
+        // field.placeholder = '';
+      }
     }
   });
 };
+
 // Email validation
 const validateEmail = function (email) {
   let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
