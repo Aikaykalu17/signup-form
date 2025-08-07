@@ -4,7 +4,11 @@ const inputField = document.querySelectorAll('input');
 const btnGreen = document.querySelector('.btn__input-field');
 const label = document.querySelectorAll('.hidden');
 const svgIcon = document.querySelectorAll('.icon__error');
+const btn = document.querySelector('.btn');
 
+btn.addEventListener('click', function (e) {
+  e.preventDefault();
+});
 // Handle Hover
 btnHover.addEventListener('mouseover', () => {
   btnHover.style.opacity = 0.7;

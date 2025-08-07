@@ -67,6 +67,7 @@ h1 {
   border-radius: 5px;
   width: 27rem;
   border: none;
+  cursor: pointer;
 }
 
 .first__name,
@@ -267,6 +268,7 @@ footer {
     width: 40rem;
     border: none;
     font-size: 29px;
+    cursor: pointer;
   }
 
   .input-fields {
@@ -470,6 +472,7 @@ footer {
     border-radius: 8px;
     width: 20rem;
     border: none;
+    cursor: pointer;
   }
 
   .input-fields {
@@ -663,6 +666,7 @@ footer {
     border-radius: 5px;
     width: 20rem;
     border: none;
+    cursor: pointer;
   }
 
   .input-fields {
@@ -856,6 +860,7 @@ footer {
     border-radius: 8px;
     width: 20rem;
     border: none;
+    cursor: pointer;
   }
 
   .input-fields {
