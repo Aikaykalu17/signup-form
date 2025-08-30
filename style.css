@@ -422,6 +422,7 @@ footer {
     width: 90%;
     align-items: center;
     gap: 2rem;
+    overflow-x: hidden;
   }
 
   .attribution {
@@ -481,7 +482,7 @@ footer {
     flex-grow: 0;
     background-color: #fff;
     height: 27rem;
-    width: 20rem;
+    width: 21rem;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
@@ -585,8 +586,6 @@ footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: scroll;
   }
 
   body {
@@ -599,6 +598,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    overflow-x: hidden;
   }
   .first__name,
   .last__name,
@@ -612,9 +612,10 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 70%;
+    width: 95%;
     align-items: center;
     gap: 2rem;
+    overflow-x: hidden;
   }
 
   .attribution {
@@ -675,7 +676,7 @@ footer {
     flex-grow: 0;
     background-color: #fff;
     height: 32rem;
-    width: 20rem;
+    width: 21rem;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
@@ -784,7 +785,7 @@ footer {
 
   body {
     background-color: hsl(0, 100%, 74%);
-    height: 100%;
+    height: 100vh;
     width: 100%;
     font-size: 16px;
     font-family: 'Poppings', sans-serif;
@@ -810,6 +811,8 @@ footer {
     width: 90%;
     align-items: center;
     gap: 2rem;
+    justify-content: center;
+    overflow-x: hidden;
   }
 
   .attribution {
@@ -869,7 +872,7 @@ footer {
     flex-grow: 0;
     background-color: #fff;
     height: 32rem;
-    width: 20rem;
+    width: 22rem;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
